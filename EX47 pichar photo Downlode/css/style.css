@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search{
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.search .content{
+position: relative;
+z-index: 2;
+color: #fff;
+text-align: center;
+}
+.search h1{
+    font-size: 2.6rem;
+    font-weight: 600;
+
+}
+.search p{
+    font-size: 1..6rem;
+    margin-top: 8px;
+}
+.search .search-box{
+    height: 55px;
+    margin: 45px 0;
+    position: relative;
+}
+input, button, i{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+.search-box input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding-left: 55px;
+}
+.search-box i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1.4rem;
+    color: #8d8d8d;
+    transform: translateY(-50%);
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .images{
+    margin-top: 40px;
+    max-width: 95%;
+    gap: 15px;
+    columns: 5 340px;
+}
+
+.images .card .details{
+    position: absolute;
+    bottom: -100px;
+    background: linear-gradient(to top, rgba(0, 0, 0 ,0.7), transparent);
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: bottom 0.1s ease;
+    
+}
+.images .card:hover .details{
+    bottom: 0px;
+}
+ .photografhar{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+ .photografhar i{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+.details .photografhar span{
+    font-size: 1.05rem;
+  
+}
+.card .details button{
+    cursor: pointer;
+    padding: 3px 8px;
+    font-size: 1.1rem;
+    background: #fff;
+}
+
+
+
+
+
+
+
+.images img{
+    width: 100%;
+}
+.images .card{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}
+.gallery .load-more{
+    margin: 50px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 12px 27px;
+    background: #8a6cff;
+
+}
+.gallery .load-more.disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0 ,0.65);
+}
+.lightbox.show {
+    display: block;
+}
+.lightbox .wrapper{
+    position: absolute;
+    max-width: 850px;
+    width: 100%;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .photografhar i{
+    font-size: 1.7rem;
+}
+header .photografhar span{
+    font-size: 1.2rem;
+}
+header .photografhar{
+    color: #333;
+}
+
+.wrapper .perviwe-img img{
+    max-height: 65vh;
+    max-width: 90vh;
+}
+.perviwe-img{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.perviwe-img .img img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .button i{
+width: 40px;
+height: 40px;
+font-size: 1.2rem;
+display: inline-block;
+background: #8a6cff;
+line-height: 42px;
+text-align: center;
+color: #fff;
+cursor: pointer;
+}
+.button i:last-child{
+    margin-left: 10px;
+    background: #6c757d;
+}
+
+
+
